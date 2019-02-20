@@ -12,7 +12,7 @@ public class PTra03_01 {
 		int num = 70;
 
 		// ★ 「変数numが70である」という条件式を追加してください
-		if() {
+		if(num == 70); {
 			System.out.println("条件に合致しました");
 		}
 	}

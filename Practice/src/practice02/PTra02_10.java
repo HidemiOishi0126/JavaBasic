@@ -23,5 +23,6 @@ public class PTra02_10 {
 		 */
 		int price = (coffee*2 + snack)*108/100;
 		System.out.println(moneyInHand - price);
+
 	}
 }
