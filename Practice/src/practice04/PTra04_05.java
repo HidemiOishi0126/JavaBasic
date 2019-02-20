@@ -46,16 +46,34 @@ public class PTra04_05 {
 			 */
 			if (cpuHand == 0) {
 				System.out.println("グー！");
+				//myHand == 2 なら勝ち
+				if(myHand == 2) {
 
-
+					winFlg = true;
+					System.out.println("win!");
+				}
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
-
-
+				//myHand == 0 なら勝ち
+				if(myHand == 0) {
+					winFlg = true;
+					System.out.println("win!");
+				}
 
 			} else {
 				System.out.println("パー！！");
+				//myHand == 1 なら勝ち
+				if(myHand ==1) {
+					winFlg = true;
+					System.out.println("win!");
+				}
+
+
+
+				//これ以外（あいこ or 負け ならもう一度最初から繰り返す
+
+
 
 
 
