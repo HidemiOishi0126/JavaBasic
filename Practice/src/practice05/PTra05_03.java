@@ -57,16 +57,14 @@ public class PTra05_03 {
 			}
 
 
-
-
-
-
-
 			// ★ 変数indexに1を足して、変数indexに代入してください
+			index = index + 1;
 
 		}
 
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
-
+		System.out.println("山:" + mountain);
+		System.out.println("川:" + river);
+		System.out.println("海:" + ocean);
 	}
 }

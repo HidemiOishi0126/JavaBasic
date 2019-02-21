@@ -21,18 +21,45 @@ public class PTra05_04 {
 		 * ●0～6が入力されている場合は、各曜日を出力した後プログラムを終了します
 		 *
 		 */
-
 		// ①
+		//breakするまで無限ループさせる？文字が入力されたらtrueになる条件式
+		while(true) {
+
 		System.out.println("0～6の整数を入力してください");
 
 		String line = scanner.nextLine();
+		int num = Integer.parseInt(line);
 
+		//０～６が入力されたらbreakしてプログラムを終了したい
 		switch(line) {
 			case "0":
+				//条件式がfalseになる処理
 				System.out.println("日曜");
 				break;
 			case "1":
 				System.out.println("月曜");
+				break;
+			case "2":
+				System.out.println("火曜");
+				break;
+			case "3":
+				System.out.println("水曜");
+				break;
+			case "4":
+				System.out.println("木曜");
+				break;
+			case "5":
+				System.out.println("金曜");
+				break;
+			case "6":
+				System.out.println("土曜");
+				break;
+				}
+		if(0 <= num && num <= 6) {
+			break;
 		}
+
+		}
+		System.out.println("プログラムを終了します");
 	}
 }
