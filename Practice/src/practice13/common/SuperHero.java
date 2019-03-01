@@ -12,14 +12,14 @@ public class SuperHero extends Hero{
 	}
 
 
-	public Item equipment() {
+	public Item getEquipment() {
 		return this.equipment;
 	}
 	public void setEquipment(Item equipment) {
 		this.equipment = equipment;
 	}
-
 }
+
 
 
 
