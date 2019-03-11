@@ -44,13 +44,13 @@ public class PTra05_03 {
 
 			switch(line) {
 				case "山":
-					mountain = mountain + 1;
+					mountain++;
 					break;
 				case "川":
-					river = river + 1;
+					river++;
 					break;
 				case "海":
-					ocean = ocean + 1;
+					ocean++;
 					break;
 				default:
 					System.out.println("無効票です");
@@ -58,7 +58,7 @@ public class PTra05_03 {
 
 
 			// ★ 変数indexに1を足して、変数indexに代入してください
-			index = index + 1;
+			index++;
 
 		}
 

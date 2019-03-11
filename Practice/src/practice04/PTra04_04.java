@@ -38,11 +38,15 @@ public class PTra04_04 {
 			progress += dice;
 
 			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
-
-			System.out.println("残り" + (map - progress) + "マス");
-		}
+			int remain = map - progress;
+			if(remain > 0) {
+			System.out.println("残り" + (remain) + "マス");
+		}else {
 
 		System.out.println("=========< GOAL >==========");
 		System.out.println("おつかれさまでした。");
 	}
+		}
+	}
 }
+

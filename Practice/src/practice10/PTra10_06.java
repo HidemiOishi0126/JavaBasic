@@ -18,23 +18,28 @@ public class PTra10_06 {
 		 * carインスタンスを3件作成し、それぞれの色、ガソリンを入力して決定してください
 		 * 各carインスタンスのrunメソッドを実行して、それぞれ「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください。
 		 */
-		Car car1 = new Car();
-		Car car2 = new Car();
-		Car car3 = new Car();
-
-		car1.color = "red";
-		car1.gasoline = 50;
-
-		car2.color = "blue";
-		car2.gasoline = 75;
-
-		car3.color = "green";
-		car3.gasoline = 90;
 
 		Car[] cars = new Car[3];
-		cars[0] = car1;
-		cars[1] = car2;
-		cars[2] = car3;
+
+
+
+		for(int i=0;i < cars.length;i++) {
+			System.out.println(i + 1 + "台目");
+			cars[i] = new Car();
+
+			System.out.println("シリアルナンバー、車の色、ガソリン量をカンマ区切りで入力して下さい。");
+			String input = new java.util.Scanner(System.in).nextLine();
+
+			String[] carInfo = input.split(",");
+
+			cars[i].serialNo = Integer.parseInt(carInfo[0]);
+			cars[i].color = carInfo[1];
+			cars[i].gasoline = Integer.parseInt(carInfo[2]);
+
+
+		}
+
+
 
 
 		final int distance = 300;

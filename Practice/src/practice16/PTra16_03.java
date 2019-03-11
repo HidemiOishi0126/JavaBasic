@@ -15,8 +15,10 @@ public class PTra16_03 {//ほんとはObjectクラスを継承してる？？
 	 * 	・親クラス（Objectクラス）のtoStringの処理を行ってください
 	 *	・その後、改行をして「PTra16_03#toString()の処理」という文字列を連結してください
 	 */
+	@Override
 	public String toString() {
-		return super.toString()+"\nPTra16_03#toString()の処理";
+		return super.toString()
+				+"\nPTra16_03#toString()の処理";
 
 	}
 

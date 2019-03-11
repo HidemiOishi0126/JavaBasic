@@ -18,21 +18,13 @@ public class PTra15_02 {
 		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
 		((Java2Month)room).getCurriculum();
 
+		String[] curriculm = ((Java2Month)room).getCurriculum();
 
 		// 取得したカリキュラム情報を全て出力してください
 
-		String[] list = {
-			"ビジネスマナー"
-			,"Javaプログラミング"
-			,"オブジェクト指向プログラミング"
-			,"DB基礎"
-			,"設計・テスト手法入門"
-			,"Webプログラミング"
-			,"JavaEE開発実習"
-		};
 
-		for(int i = 0;i < list.length;i++) {
-			System.out.println(list[i]);
+		for(int i = 0;i < curriculm.length;i++) {
+			System.out.println(curriculm[i]);
 		}
 	}
 }

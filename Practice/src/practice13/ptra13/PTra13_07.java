@@ -37,15 +37,17 @@ public class PTra13_07 {
 		 * 	●SuperHeroの攻撃 -> ダメージ判定 -> Slimeの攻撃 -> ダメージ判定
 		 * 上記を繰り返し行います
 		 */
+		boolean superHeroWin = true;
 		while(true) {
 
+			System.out.println(superHero.getName() + "の攻撃");
 			if(slime.damage(superHero.attack())) {
-				System.out.println("勇者はスライムとの戦闘に勝利した");
 				break;
 			}
 
+			System.out.println(slime.getName() + "の攻撃");
 			if(superHero.damage(slime.attack())) {
-				System.out.println("スライムは勇者との戦闘に勝利した");
+				superHeroWin = false;
 				break;
 			}
 		}
@@ -53,6 +55,10 @@ public class PTra13_07 {
 
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
-
+		if(superHeroWin = true) {
+		System.out.println("勇者はスライムとの戦闘に勝利した");
+		}else {
+		System.out.println("スライムは勇者との戦闘に勝利した");
+		}
 	}
 }

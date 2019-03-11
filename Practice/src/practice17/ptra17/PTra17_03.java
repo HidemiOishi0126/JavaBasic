@@ -18,7 +18,8 @@ public class PTra17_03 {
 	public static void quiz() {
 		final String[] question = {
 				"Javaの予約語となっている単語は次のうちどれか。\n1:static\t2:Sample\t3:java",
-				"次の中からMicrosoftの製品はどれか。\n1:GitHub\t2:サクラエディタ\t3:SQL Server", "Javaが誕生した年は？（西暦で答えなさい）"
+				"次の中からMicrosoftの製品はどれか。\n1:GitHub\t2:サクラエディタ\t3:SQL Server",
+				"Javaが誕生した年は？（西暦で答えなさい）"
 		};
 		final int[] answer = { 1, 3, 1995 };
 
@@ -34,38 +35,41 @@ public class PTra17_03 {
 		 * から再度入力を求めるような形に仕様変更してください。
 		 *
 		 */
-		try {
 			for (int i = 0; i < question.length; i++) {
 				System.out.println("問題：" + (i + 1));
 				System.out.println(question[i]);
+				int num = 0;
 				while (true) {
-					int num = 0;
 					try {
 						System.out.println("回答を数字で入力してください");
 						String input = ThrowExceptionUtil.inputValue();
 
 						num = Integer.parseInt(input);
 
+					} catch (IOException e) {
+						System.out.println("例外が発生しました");
 					} catch (NumberFormatException e) {
+						System.out.println("数字以外が入力されました");
+
+
 
 						continue;
-					}
+						}
+
+					break;
+				}
+
+
 					if (answer[i] == num) {
 						score++;
 					}
-					break;
 				}
-			}
 
-		} catch (IOException e) {
-			System.out.println("例外が発生しました");
-		} catch (NumberFormatException e) {
-			System.out.println("数字以外が入力されました");
-		}
+
 
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
-
+	}
 	}
 
-}
+

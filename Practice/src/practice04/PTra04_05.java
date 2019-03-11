@@ -51,6 +51,10 @@ public class PTra04_05 {
 
 					winFlg = true;
 					System.out.println("win!");
+				}else if(myHand == 1) {
+					System.out.println("lose");
+				}else if(myHand == 0) {
+					System.out.println("あいこ");
 				}
 
 			} else if (cpuHand == 1) {
@@ -59,6 +63,10 @@ public class PTra04_05 {
 				if(myHand == 0) {
 					winFlg = true;
 					System.out.println("win!");
+				}else if(myHand == 2) {
+					System.out.println("lose");
+				}else if(myHand == 1) {
+					System.out.println("あいこ");
 				}
 
 			} else {
@@ -67,6 +75,10 @@ public class PTra04_05 {
 				if(myHand ==1) {
 					winFlg = true;
 					System.out.println("win!");
+				}else if(myHand == 0) {
+					System.out.println("lose");
+				}else if(myHand == 2) {
+					System.out.println("あいこ");
 				}
 
 

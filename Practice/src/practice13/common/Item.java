@@ -30,9 +30,6 @@ public class Item {
 
 	}
 
-	public Item() {
-		super();
-	}
 
 	 //name, additionalDamageに初期値を設定するコンストラクタ
 

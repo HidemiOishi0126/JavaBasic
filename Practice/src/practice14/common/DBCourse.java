@@ -1,6 +1,6 @@
 package practice14.common;
 
-public class DBCourse {
+public class DBCourse implements Course{
 
 	public String getCourseName() {
 		return "【Eラーニング】DB基礎";

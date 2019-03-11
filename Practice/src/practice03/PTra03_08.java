@@ -37,18 +37,18 @@ public class PTra03_08 {
 		 */
 		switch(num) {
 		case 1:
-			num = 150;
+			money = money - 150;
 			break;
 		case 2:
-			num = 160;
+			money = money - 160;
 			break;
 		case 3:
-			num = 200;
+			money = money - 200;
 			break;
 		}
 
 
-		System.out.println(money - num + "円");
+		System.out.println(money + "円");
 
 	}
 }
